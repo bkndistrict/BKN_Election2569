@@ -194,7 +194,7 @@
             display: flex; flex-direction: column; overflow-y: auto;
         }
         .info-popup-overlay.visible .info-card { transform: translateY(0); }
-        .close-btn-circle { position: absolute; top: 1.5rem; right: 1.5rem; background: #eee; width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; cursor: pointer; }
+        .close-btn-circle { position: absolute; top: 0.5rem; right: 0.5rem; background: #eee; width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; cursor: pointer; z-index: 20; }
         .badge { display: inline-flex; align-items: center; justify-content: center; padding: 0.4rem 1rem; border-radius: 1.2rem; font-size: 1.3rem; font-weight: bold; margin-right: 0.5rem; }
         .badge-out { background: #FFE5D9; color: #D64545; }
         .badge-in { background: #E3F2FD; color: #1E88E5; }
@@ -274,8 +274,8 @@
                 
                 <div class="scroll-wrapper">
                     <div style="padding-bottom: 2rem; text-align:center;">
-                        <h1 style="font-size: 2.8rem; color:#414141; margin-bottom:0.5rem;">กรุงเทพมหานคร<br>เขตเลือกตั้งที่ 33</h1>
-                        <h2 style="font-size: 2.1rem; color:#00744b;">เขตบางกอกน้อย</h2>
+                        <h1 style="font-size: 2.8rem; color:#414141; margin-bottom:0.5rem;">กรุงเทพมหานคร<br>เขตเลือกตั้งที่ 4</h1>
+                        <h2 style="font-size: 2.1rem; color:#00744b;">เขตคลองเตยและเขตวัฒนา</h2>
                     </div>
                     <div id="timeline-container"></div>
                     <button class="mobile-only-btn" onclick="switchTab('map', document.querySelectorAll('.nav-tab')[1])" 
@@ -309,12 +309,12 @@
                     <div class="search-box">
                         <select id="districtSelect" class="search-dropdown" onchange="updateUnitDropdown()">
                             <option value="">เลือกแขวง...</option>
-                            <option value="แขวงคลองเตย">คลองเตย</option>
-                            <option value="แขวงคลองเตยเหนือ">คลองเตยเหนือ</option>
-                            <option value="แขวงคลองตัน">คลองตัน</option>
-                            <option value="แขวงคลองตันเหนือ">คลองตันเหนือ</option>
-                            <option value="แขวงพระโขนง">พระโขนง</option>
-                            <option value="แขวงพระโขนงเหนือ">พระโขนงเหนือ</option>
+                            <option value="แขวงศิริราช">ศิริราช</option>
+                            <option value="แขวงบ้านช่างหล่อ">คลองเตยเหนือ</option>
+                            <option value="แขวงบางขุนนนท์">คลองตัน</option>
+                            <option value="แขวงบางขุนศรี">คลองตันเหนือ</option>
+                            <option value="แขวงอรุณอมรินทร์">พระโขนง</option>
+                            <option value="-">พระโขนงเหนือ</option>
                         </select>
                         <select id="unitSelect" class="search-dropdown" onchange="searchUnit()">
                             <option value="">หน่วยที่...</option>
@@ -323,12 +323,11 @@
                     </div>
 
                     <div class="scroll-btn-container">
-                        <button class="filter-btn" onclick="filterMap('แขวงคลองเตย', this)">คลองเตย</button>
-                        <button class="filter-btn" onclick="filterMap('แขวงคลองเตยเหนือ', this)">คลองเตยเหนือ</button>
-                        <button class="filter-btn" onclick="filterMap('แขวงคลองตัน', this)">คลองตัน</button>
-                        <button class="filter-btn" onclick="filterMap('แขวงคลองตันเหนือ', this)">คลองตันเหนือ</button>
-                        <button class="filter-btn" onclick="filterMap('แขวงพระโขนง', this)">พระโขนง</button>
-                        <button class="filter-btn" onclick="filterMap('แขวงพระโขนงเหนือ', this)">พระโขนงเหนือ</button>
+                        <button class="filter-btn" onclick="filterMap('แขวงศิริราช', this)">ศิริราช</button>
+                        <button class="filter-btn" onclick="filterMap('แขวงบ้านช่างหล่อ', this)">บ้านช่างหล่อ</button>
+                        <button class="filter-btn" onclick="filterMap('แขวงบางขุนนนท์', this)">บางขุนนนท์</button>
+                        <button class="filter-btn" onclick="filterMap('แขวงบางขุนศรี', this)">บางขุนศรี</button>
+                        <button class="filter-btn" onclick="filterMap('แขวงอรุณอมรินทร์', this)">อรุณอมรินทร์</button>
                     </div>
                 </div>
                 <div id="map"></div>
@@ -339,10 +338,9 @@
         <div id="info-overlay" class="info-popup-overlay" onclick="closePopup(event)">
             <div class="info-card" onclick="event.stopPropagation()">
                 <div class="close-btn-circle" onclick="closePopupDirect()">✕</div>
-                <h2 id="p-name" style="font-size: 2rem; font-weight: 700; color: #333; line-height: 1.2;">-</h2>
+                <h2 id="p-name" style="font-size: 2rem; font-weight: 700; color: #333; line-height: 1.2; padding-right: 3.5rem;">-</h2>
                 <p id="p-sub" style="font-size: 1.6rem; color: #888; margin-top: 0.5rem;">-</p>
                 <div style="margin-top: 1rem;">
-                    <span id="p-type" class="badge"></span>
                     <span id="p-unit" style="font-size: 1.4rem; color: #555; background:#f5f5f5; padding: 0.3rem 1rem; border-radius: 1.5rem;"></span>
                 </div>
                 <div id="p-gallery" class="gallery-scroll"></div>
@@ -664,13 +662,8 @@
         function openPopup(data) {
             document.getElementById('p-name').innerText = data.name;
             document.getElementById('p-sub').innerText = data.details_range;
-            document.getElementById('p-unit').innerText = data.unit_count + " (" + (data.location_type.includes("ภายนอก") ? "Outdoor" : "Indoor") + ")";
+            document.getElementById('p-unit').innerText = data.unit_count;
             document.getElementById('p-note').innerText = data.note || "-";
-            
-            const typeBadge = document.getElementById('p-type');
-            const isOutdoor = data.location_type.includes("ภายนอก");
-            typeBadge.className = isOutdoor ? "badge badge-out" : "badge badge-in";
-            typeBadge.innerText = isOutdoor ? "ภายนอก" : "ภายใน";
             
             const gallery = document.getElementById('p-gallery');
             if(data.images && data.images.length > 0) {
