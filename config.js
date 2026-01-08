@@ -17,3 +17,4 @@ const subDistrictColors = {
     "แขวงอรุณอมรินทร์": "#007bff",
     "-": "#6610f2"
 };
+
