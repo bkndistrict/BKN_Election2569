@@ -27,7 +27,7 @@ const units = [
             { id: 4, name: "โรงเรียนสุวรรณารามวิทยาคม", unit_count: "2 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 9-10", location_type: "เต็นท์", note: "โถงทางเดินใกล้ทีประตู", lat:13.76238, lng:100.47539, images: ["images/id04p01.jpg","images/id04p02.jpg"] },
             { id: 5, name: "โรงเรียนวัดวิเศษการ", unit_count: "2 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 11-12", location_type: "ภายในอาคาร", note: "-", lat:13.75698, lng:100.48223, images: ["images/id05p01.jpg","images/id05p02.jpg"] },
             { id: 6, name: "ศาลาวัดฉิมทายกาวาส", unit_count: "1 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 13", location_type: "ภายในอาคาร", note: "-", lat:13.75846, lng:100.48029, images: ["images/id06p01.jpg","images/id06p02.jpg"] },
-            { id: 7, name: "เต็นท์ลานจอดรถเจ ปาร์ค", unit_count: "1 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 13", location_type: "เต็นท์", note: "-", lat:13.75666, lng:100.47813, images: ["images/id07p01.jpg","images/id07p02.jpg"] },
+            { id: 7, name: "เต็นท์ลานจอดรถเจ ปาร์ค", unit_count: "1 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 14", location_type: "เต็นท์", note: "-", lat:13.75666, lng:100.47813, images: ["images/id07p01.jpg","images/id07p02.jpg"] },
             { id: 8, name: "เต็นท์บริเวณลานกิจกรรมโรงเรียนสายน้ำผึ้ง", unit_count: "3 หน่วย", details_range: "แขวงคลองเตย หน่วยที่ 16-18", location_type: "ภายนอกอาคาร", note: "ลานกิจกรรม ใต้โดม", lat:13.727436635066569, lng:100.56474239314353, images: ["images/id08p01.jpg","images/id08p02.jpg"] },
             { id: 9, name: "เต็นท์บริเวณที่จอดรถหน้าศูนย์อาหาร 130 ปี กรมศุลกากร", unit_count: "3 หน่วย", details_range: "แขวงคลองเตย หน่วยที่ 19-21", location_type: "ภายนอกอาคาร", note: "ที่จอดรถหน้าศูนย์อาหาร", lat:13.712634552474507, lng:100.56516374972053, images: ["images/id09p01.jpg","images/id09p02.jpg"] },
             { id: 10, name: "ที่จอดรถข้างอาคาร 2 ศูนย์บริการสาธารณสุข 41 คลองเตย", unit_count: "1 หน่วย", details_range: "แขวงคลองเตย หน่วยที่ 22", location_type: "ภายนอกอาคาร", note: "บริเวณที่จอดรถข้างอาคาร 2", lat:13.714698427270795, lng:100.56966295374613, images: ["images/id10p01.jpg","images/id10p02.jpg"] },
@@ -97,3 +97,4 @@ const units = [
             { id: 74, name: "โรงเรียนแสงหิรัญ", unit_count: "1 หน่วย", details_range: "แขวงพระโขนงเหนือ หน่วยที่ 27", location_type: "ภายในอาคาร", note: "-", lat:13.710356587962423, lng:100.59882504044789, images: ["images/update.jpg", "images/update.jpg"] },
             { id: 75, name: "วิทยาลัยอาชีวศึกษาเทคนิคบริหารธุรกิจกรุงเทพ", unit_count: "3 หน่วย", details_range: "แขวงพระโขนงเหนือ หน่วยที่ 28-30", location_type: "ภายในอาคาร", note: "-", lat:13.710577668070108, lng:100.59921462823324, images: ["images/update.jpg", "images/update.jpg"] }
         ];
+
