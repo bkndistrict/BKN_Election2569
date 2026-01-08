@@ -21,7 +21,7 @@ const timelineData = [
    UNIT DATA
    =============================== */
 const units = [
-            { id: 1, name: "โรงเรียนโฆสิตสโมสร ซอยวัดระฆัง", unit_count: "3 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 1-3", location_type: "เต็นท์และภายในอาคาร", note: "หน่วยที่ 1-2 เต็นท์ / หน่วยที่ 3 ภายในอาคาร ", lat:13.753227324612102, 100.4854748423283, lng:100.48543, images: ["images/id01p01.jpg","images/id01p02.jpg","images/id01p03.jpg"] },
+            { id: 1, name: "โรงเรียนโฆสิตสโมสร ซอยวัดระฆัง", unit_count: "3 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 1-3", location_type: "เต็นท์และภายในอาคาร", note: "หน่วยที่ 1-2 เต็นท์ / หน่วยที่ 3 ภายในอาคาร ", lat:13.753227324612102, lng:100.4854748423283, images: ["images/id01p01.jpg","images/id01p02.jpg","images/id01p03.jpg"] },
             { id: 2, name: "โรงเรียนสตรีวัดระฆัง ซอยวัดระฆัง", unit_count: "2 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 4-5", location_type: "เต็นท์และภายในอาคาร", note: "หน่วยที่ 4 ภายในอาคาร (ทางเชื่อม) / หน่วยที่ 5 สนามบาส", lat:13.75225, lng:100.48615, images: ["images/id02p01.jpg","images/id02p02.jpg"] },
             { id: 3, name: "โรงเรียนวัดสุวรรณาราม", unit_count: "3 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 6-8", location_type: "ภายในอาคาร", note: "หน่วยที่ 6-7 ห้องประชุม / หน่วยที่ 8 โรงอาหาร", lat:13.76175, lng:100.47788, images: ["images/id03p01.jpg","images/id03p02.jpg"] },
             { id: 4, name: "โรงเรียนสุวรรณารามวิทยาคม", unit_count: "2 หน่วย", details_range: "แขวงศิริราช หน่วยที่ 9-10", location_type: "เต็นท์", note: "โถงทางเดินใกล้ทีประตู", lat:13.76238, lng:100.47539, images: ["images/id04p01.jpg","images/id04p02.jpg"] },
@@ -97,5 +97,6 @@ const units = [
             { id: 74, name: "โรงเรียนแสงหิรัญ", unit_count: "1 หน่วย", details_range: "แขวงพระโขนงเหนือ หน่วยที่ 27", location_type: "ภายในอาคาร", note: "-", lat:13.710356587962423, lng:100.59882504044789, images: ["images/update.jpg", "images/update.jpg"] },
             { id: 75, name: "วิทยาลัยอาชีวศึกษาเทคนิคบริหารธุรกิจกรุงเทพ", unit_count: "3 หน่วย", details_range: "แขวงพระโขนงเหนือ หน่วยที่ 28-30", location_type: "ภายในอาคาร", note: "-", lat:13.710577668070108, lng:100.59921462823324, images: ["images/update.jpg", "images/update.jpg"] }
         ];
+
 
 
